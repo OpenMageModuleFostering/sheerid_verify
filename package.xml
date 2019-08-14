@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<package>
+  <name>SheerID_Verify</name>
+  <version>2.1.3</version>
+  <stability>beta</stability>
+  <license uri="http://www.spdx.org/licenses/Apache-2.0">Apache-2.0</license>
+  <channel>community</channel>
+  <extends/>
+  <summary/>
+  <description/>
+  <notes/>
+  <authors>
+    <author>
+      <name>Alex Boone</name>
+      <user>alex</user>
+      <email>alex@sheerid.com</email>
+    </author>
+  </authors>
+  <date>2016-08-08</date>
+  <time>15:31:07</time>
+  <contents>
+    <target name="magecommunity">
+      <dir name="SheerID">
+        <dir name="Verify">
+          <dir name="Block">
+            <dir name="Admin">
+              <dir name="Order">
+                <file name="Custom.php" hash="app/code/SheerID/Verify/Block/Admin/Order/Custom.php"/>
+              </dir>
+            </dir>
+            <file name="Adminjsinit.php" hash="app/code/SheerID/Verify/Block/Adminjsinit.php"/>
+            <file name="Script.php" hash="app/code/SheerID/Verify/Block/Script.php"/>
+            <file name="Verify.php" hash="app/code/SheerID/Verify/Block/Verify.php"/>
+          </dir>
+          <dir name="Helper">
+            <file name="Data.php" hash="app/code/SheerID/Verify/Helper/Data.php"/>
+            <file name="Rest.php" hash="app/code/SheerID/Verify/Helper/Rest.php"/>
+          </dir>
+          <dir name="Model">
+            <dir name="Order">
+              <file name="AdminObserver.php" hash="app/code/SheerID/Verify/Model/Order/AdminObserver.php"/>
+              <file name="Observer.php" hash="app/code/SheerID/Verify/Model/Order/Observer.php"/>
+            </dir>
+            <dir name="Rule">
+              <dir name="Condition">
+                <file name="Verified.php" hash="app/code/SheerID/Verify/Model/Rule/Condition/Verified.php"/>
+              </dir>
+            </dir>
+            <dir name="System">
+              <dir name="Config">
+                <dir name="Source">
+                  <file name="AffiliationType.php" hash="app/code/SheerID/Verify/Model/System/Config/Source/AffiliationType.php"/>
+                  <file name="Noyes.php" hash="app/code/SheerID/Verify/Model/System/Config/Source/Noyes.php"/>
+                  <file name="OptionalSheeridCampaign.php" hash="app/code/SheerID/Verify/Model/System/Config/Source/OptionalSheeridCampaign.php"/>
+                  <file name="SheeridCampaign.php" hash="app/code/SheerID/Verify/Model/System/Config/Source/SheeridCampaign.php"/>
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+          <dir name="Resource">
+            <dir name="Eav">
+              <dir name="Mysql4">
+                <file name="Setup.php" hash="app/code/SheerID/Verify/Resource/Eav/Mysql4/Setup.php"/>
+              </dir>
+            </dir>
+          </dir>
+          <dir name="controllers">
+            <file name="CartController.php" hash="app/code/SheerID/Verify/controllers/CartController.php"/>
+            <file name="VerifyController.php" hash="app/code/SheerID/Verify/controllers/VerifyController.php"/>
+          </dir>
+          <dir name="etc">
+            <file name="adminhtml.xml" hash="app/code/SheerID/Verify/etc/adminhtml.xml"/>
+            <file name="config.xml" hash="app/code/SheerID/Verify/etc/config.xml"/>
+            <file name="system.xml" hash="app/code/SheerID/Verify/etc/system.xml"/>
+          </dir>
+          <dir name="lib">
+            <dir name="SheerID">
+              <file name="README.md" hash="app/code/SheerID/Verify/lib/SheerID/README.md"/>
+              <file name="SheerID.php" hash="app/code/SheerID/Verify/lib/SheerID/SheerID.php"/>
+              <dir name="samples">
+                <dir name="asset-upload">
+                  <file name="index.php" hash="app/code/SheerID/Verify/lib/SheerID/samples/asset-upload/index.php"/>
+                </dir>
+                <file name="cookie.php" hash="app/code/SheerID/Verify/lib/SheerID/samples/cookie.php"/>
+              </dir>
+            </dir>
+          </dir>
+          <dir name="sql">
+            <dir name="sheerid_setup">
+              <file name="mysql4-install-1.0.0.php" hash="app/code/SheerID/Verify/sql/sheerid_setup/mysql4-install-1.0.0.php"/>
+            </dir>
+            <file name="uninstall.sql" hash="app/code/SheerID/Verify/sql/uninstall.sql"/>
+          </dir>
+        </dir>
+      </dir>
+    </target>
+    <target name="mageetc">
+      <dir name="modules">
+        <file name="SheerID_All.xml" hash="etc/modules/SheerID_All.xml"/>
+      </dir>
+    </target>
+    <target name="magelocale">
+      <dir name="en_US">
+        <file name="SheerID_Verify.csv" hash="locale/en_US/SheerID_Verify.csv"/>
+      </dir>
+    </target>
+    <target name="magedesign">
+      <dir name="frontend">
+        <dir name="base">
+          <dir name="default">
+            <dir name="layout">
+              <file name="verify.xml" hash="app/design/frontend/base/default/layout/verify.xml"/>
+            </dir>
+          </dir>
+        </dir>
+      </dir>
+      <dir name="frontend">
+        <dir name="base">
+          <dir name="default">
+            <dir name="template">
+              <dir name="verify">
+                <file name="verify.phtml" hash="app/design/frontend/base/default/template/verify/verify.phtml"/>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+      </dir>
+      <dir name="adminhtml">
+        <dir name="base">
+          <dir name="default">
+            <dir name="layout">
+              <file name="verify.xml" hash="app/design/adminhtml/base/default/layout/verify.xml"/>
+            </dir>
+          </dir>
+        </dir>
+      </dir>
+      <dir name="adminhtml">
+        <dir name="base">
+          <dir name="default">
+            <dir name="template">
+              <dir name="verify">
+                <file name="jsinit.phtml" hash="app/design/adminhtml/base/default/template/verify/jsinit.phtml"/>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+      </dir>
+    </target>
+    <target name="mageskin">
+      <dir name="frontend">
+        <dir name="default">
+          <dir name="default">
+            <dir name="sheerid_verify">
+              <dir name="css">
+                <file name="verify.css" hash="skin/frontend/default/default/sheerid_verify/css/verify.css"/>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+      </dir>
+    </target>
+  </contents>
+  <compatible/>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.0.0</min>
+        <max>6.0.0</max>
+      </php>
+    </required>
+  </dependencies>
+</package>

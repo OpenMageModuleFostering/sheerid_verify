@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<tabs>
+		<sheeridconfig translate="label" module="sheerid_verify">
+			<label>SheerID Settings</label>
+			<sort_order>99999</sort_order>
+		</sheeridconfig>
+	</tabs>
+	<sections>
+		<sheerid_options translate="label" module="sheerid_verify">
+			<label>SheerID</label>
+			<tab>sheeridconfig</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>1000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<settings translate="label">
+					<label>Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<sandbox translate="label">
+							<label>Sandbox Mode?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>SheerID_Verify_Model_System_Config_Source_Noyes</source_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[Sandbox Mode facilitates integration testing. For more information, please view the <a href="http://developer.sheerid.com" target="_blank">SheerID Developer Center</a>.]]></comment>
+						</sandbox>
+						<sandbox_access_token translate="label">
+							<label>SheerID Sandbox Access Token</label>
+							<frontend_type>password</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[The token that allows your system to access the SheerID Sandbox API. Obtained from the <a href="https://services-sandbox.sheerid.com/home/tokens.html" target="_blank">SheerID Control Center</a>.]]></comment>
+							<depends>
+								<sandbox>1</sandbox>
+							</depends>
+						</sandbox_access_token>
+						<access_token translate="label">
+							<label>SheerID Access Token</label>
+							<frontend_type>password</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[The token that allows your system to access the SheerID API. Obtained from the <a href="https://services.sheerid.com/home/tokens.html" target="_blank">SheerID Control Center</a>.]]></comment>
+							<depends>
+								<sandbox>0</sandbox>
+							</depends>
+						</access_token>
+						<default_campaign translate="label">
+							<label>Default Campaign</label>
+							<frontend_type>select</frontend_type>
+							<source_model>SheerID_Verify_Model_System_Config_Source_OptionalSheeridCampaign</source_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the campaign that will be used to verify by default. If you don't have any set up, create one using the <a href="https://services.sheerid.com/home/guide.html?platform=magento" target="_blank">Template Guide</a>.]]></comment>
+						</default_campaign>
+						<coupon_code_entry translate="label">
+							<label>Verify on Coupon Code Entry</label>
+							<frontend_type>select</frontend_type>
+							<source_model>SheerID_Verify_Model_System_Config_Source_Noyes</source_model>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[If this setting is enabled, users inputting a coupon code will be prompted to verify if the price rule is conditional upon a SheerID-verified affiliation.]]></comment>
+						</coupon_code_entry>
+						<add_to_cart_button translate="label">
+							<label>Verify on Product Page</label>
+							<frontend_type>select</frontend_type>
+							<source_model>SheerID_Verify_Model_System_Config_Source_Noyes</source_model>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[If this setting is enabled, users will be prompted to verify on the product page when attempting to buy a product that requires verification.]]></comment>
+						</add_to_cart_button>
+					</fields>
+				</settings>
+			</groups>
+		</sheerid_options>
+	</sections>
+</config>

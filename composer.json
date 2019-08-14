@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/SheerID_Verify",
+    "type": "magento-module",
+    "license": "Apache-2.0",
+    "homepage": "",
+    "description": "",
+    "authors": [
+    {
+        "name": "Alex Boone",
+        "email": "alex@sheerid.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

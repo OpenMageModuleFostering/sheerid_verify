@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+		<reference name="head">
+			<action method="addCss"><stylesheet>sheerid_verify/css/verify.css</stylesheet></action>
+		</reference>
+	</default>
+	<default>
+		<reference name="before_body_end">
+			<block type="sheerid/script" name="verify.scripts" as="scripts" />
+		</reference>
+	</default>
+</layout>
