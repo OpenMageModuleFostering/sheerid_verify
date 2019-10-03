@@ -1,5 +1,5 @@
 {
-    "name": "OpenMageModuleFostering\/SheerID_Verify",
+    "name": "openmage-module-fostering\/sheerid_verify",
     "type": "magento-module",
     "license": "Apache-2.0",
     "homepage": "",
